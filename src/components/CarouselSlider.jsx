@@ -8,7 +8,7 @@ import { arrowback, arrowfront, womanExport, nexusMeeting, nexusAgro } from '../
 const CarouselSlider = () => {
     // slides = [0, 1, 2, 3]
     const images = [womanExport, nexusMeeting, nexusAgro,]
-    const slideIndex = [0, 1, 2, 3]
+    const slideIndex = [0, 1, 2]
     const [currentIndex, setCurrentIndex] = useState(0)
     const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % images.length)
     const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length)
@@ -48,12 +48,16 @@ const CarouselSlider = () => {
                 <button className='rounded-full cursor-pointer bg-white py-2 px-6 lg:w-[140px] 2xl:w-[200px] 2xl:py-6 text-[12px] font-neulis-semibold'>Read Reviews</button>
 
             </div> */}
-            {currentIndex == 0 && <div className='flex flex-1 w-full justify-between'>
-                <div className='flex-[0.5] absolute lg:top-[70%] top-[50%] bg-transparent border px-6 py-4 ml-8 rounded-[40px] backdrop-blur-md  justify-start w-1/2'>
+            {currentIndex == 0 && <div className='flex flex-1 lg:flex-row flex-col w-full justify-between'>
+                <div className='absolute z-2 flex lg:hidden justify-center  right-0 mr-5 bg-red-600 w-3/6 -mt-[90vh] bg-transparent border px-4 py-4 rounded-[40px] backdrop-blur-md'>
+                    <p className='flex justify-center text-white font-sora'>Partner With Us</p>
+
+                </div>
+                <div className='lg:flex-[0.5] absolute lg:top-[70%] top-[70%] bg-transparent border px-6 lg:py-4 py-8 ml-8 rounded-[30px] backdrop-blur-md  justify-start lg:w-1/2 '>
                     <p className='2xl:text-[45px] lg:text-[40px] text-[14px] font-sora text-white w-full '>We Don't Just Grow Ventures,</p>
                     <p className='2xl:text-[45px] lg:text-[40px] text-[14px] font-sora text-white w-full font-semibold'>We <span className='text-primary-green font-semibold'>Engineer The Future!</span></p>
                 </div>
-                <div className=' flex-[0.5] w-1/6 ml-[60vw]  absolute lg:top-[80%] top-[50%] bg-transparent border px-4 py-4 rounded-[40px] backdrop-blur-md'>
+                <div className='hidden lg:flex justify-center flex-[0.5] w-1/6 ml-[60vw]  absolute lg:top-[80%] top-[50%] bg-transparent border px-4 py-4 rounded-[40px] backdrop-blur-md'>
                     <p className='flex justify-center text-white font-sora'>Partner With Us</p>
 
                 </div>
@@ -64,12 +68,12 @@ const CarouselSlider = () => {
 
             }
             {currentIndex == 1 && <div className='absolute lg:top-[70%] top-[50%] h-full  justify-start  px-8 w-full'>
-                <p className='2xl:text-[50px] lg:text-[50px] text-[14px] font-sora text-white w-full '>We Don't Just Grow Ventures,</p>
-                <p className='2xl:text-[50px] lg:text-[50px] text-[14px] font-sora text-white w-full font-semibold'>We <span className='text-primary-green font-semibold'>Engineer The Future !</span></p>
+                <p className='2xl:text-[50px] lg:text-[50px] text-[30px] font-sora text-white w-full '>We Don't Just Grow Ventures,</p>
+                <p className='2xl:text-[50px] lg:text-[50px] text-[30px] font-sora text-white w-full font-semibold'>We <span className='text-primary-green font-semibold'>Engineer The Future !</span></p>
             </div>}
             {currentIndex == 2 && <div className='absolute lg:top-[70%] top-[50%] h-full  justify-start  px-8 w-full'>
-                <p className='2xl:text-[50px] lg:text-[50px] text-[14px] font-sora text-white w-full '>We Don't Just Grow Ventures,</p>
-                <p className='2xl:text-[50px] lg:text-[50px] text-[14px] font-sora text-white w-full font-semibold'>We <span className='text-primary-green font-semibold'>Engineer The Future !</span></p>
+                <p className='2xl:text-[50px] lg:text-[50px] text-[30px] font-sora text-white w-full '>We Don't Just Grow Ventures,</p>
+                <p className='2xl:text-[50px] lg:text-[50px] text-[30px] font-sora text-white w-full font-semibold'>We <span className='text-primary-green font-semibold'>Engineer The Future !</span></p>
             </div>}
             <p className='absolute text-white lg:top-[95%] ml-[85vw] font-fractul font-semibold'>plenturanexus.com</p>
 

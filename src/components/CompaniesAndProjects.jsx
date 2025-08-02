@@ -6,8 +6,8 @@ import fadeIn from './Variant'
 const CompaniesAndProjects = () => {
 
     return (
-        <div className='bg-primary-green-black overflow-hidden lg:pt-0 py-32 font-sora bg-primary-sky-blue lg:px-16 px-4 text-[12px] -z-50'>
-            <p className='text-[50px] flex justify-center'>COMPANIES & POJECTS</p>
+        <div className='bg-primary-green-black overflow-hidden lg:pt-0 lg:py-32  pb-32 font-sora bg-primary-sky-blue lg:px-16 px-4 text-[12px] -z-50'>
+            <p className='lg:text-[50px]  text-[35px] flex justify-center text-center'>COMPANIES & POJECTS</p>
 
 
             <motion.div
@@ -17,8 +17,8 @@ const CompaniesAndProjects = () => {
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.1 }}
             >
-                <p className='my-4 font-semibold text-[20px]'>Featured Projects</p>
-                <div className='px-8'>
+                <p className='my-4 font-semibold lg:text-[20px] flex lg:justify-start justify-center'>Featured Projects</p>
+                <div className='lg:px-8 flex flex-col lg:items-start items-center '>
                     <p>· Ogbomosho Agro-Industrial Estate</p>
                     <p>· Calabar Cocoa Processing Facility</p>
                     <p>· Cross River Strategic Farming (1,000 ha JV & 5,000 ha lease)</p>
@@ -27,7 +27,7 @@ const CompaniesAndProjects = () => {
 
 
                 <div className='grid grid-cols-3'>
-                    {[1, 2, 3, 4, 5, 6].map((e, i) => <div key={i} className='lg:w-[350px] lg:h-[300px] w-[200px] h-[200px] rounded-[40px] lg:m-8 m-2 bg-white'>
+                    {[1, 2, 3, 4, 5, 6].map((e, i) => <div key={i} className='lg:w-[350px] lg:h-[300px] w-[100px] h-[100px] rounded-[30px] lg:m-8 m-2 bg-white'>
 
                     </div>)}
 

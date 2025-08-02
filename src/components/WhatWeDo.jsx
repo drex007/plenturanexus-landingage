@@ -3,15 +3,15 @@ import { nexusWhatWeDo } from '../assets'
 
 const WhatWeDo = () => {
     return (
-        <div className='bg-primary-sky-blue w-full font-sora flex flex-1 p-16 space-x-16 text-[12px]'>
-            <div className='flex-[0.6]'>
-                <p className='my-4 text-[60px]'>What We Do </p>
+        <div className='bg-primary-sky-blue w-full font-sora flex lg:flex-1 lg:flex-row flex-col lg:p-16 p-4 lg:space-x-16 text-[12px]'>
+            <div className='lg:flex-[0.6] lg:order-1 order-2 lg:justify-items-start flex flex-col justify-items-center lg:items-start items-center'>
+                <p className='my-4 lg:text-[60px] text-[35px]'>What We Do </p>
                 <p>At Plentura Nexus, opportunity isn’t stumbled upon—it’s engineered. As an execution hub and export gateway, we structure, mobilize, and execute bold ideas into scalable, real-world impact. From high-value agriculture and PPP infrastructure to export-grade processing and global trade facilitation, we activate value chains, align stakeholders, and bridge the gap between vision and implementation.
 
                 </p>
-                <p className='text-[30px] my-8'>Our Services:</p>
+                <p className='text-[30px] lg:my-8 lg:mt-0 mt-4'>Our Services:</p>
 
-                <p className='my-6'><span className='font-semibold'>1. Export & Global Trade:</span><br></br>
+                <p className='my-6 lg:text-start text-center'><span className='font-semibold'>1. Export & Global Trade:</span><br></br>
                     We lead the export of high-quality agricultural commodities—building structured trade ecosystems, ensuring certification and compliance, and connecting producers to global buyers and markets.<p />
 
                     <p className='my-6'>
@@ -33,7 +33,7 @@ const WhatWeDo = () => {
                 </p>
 
             </div>
-            <div className='flex-[0.4]'>
+            <div className='lg:flex-[0.4] w-full lg:order-2 order-1'>
                 <img src={nexusWhatWeDo} alt="Export of agro products" className='' />
             </div>
         </div>

@@ -25,10 +25,14 @@ import contactUsImage from './images/contact-image.png'
 import splitGinger from './images/split-ginger.png'
 import cashew from './images/cashew.png'
 import cocoaBeans from './images/cocoa-beans.png'
+import phone2 from './images/phone2.png'
+import logoWhite from './icons/logo-white.png'
 
 
 
 export {
+    logoWhite,
+    phone2,
     splitGinger,
     cashew,
     cocoaBeans,

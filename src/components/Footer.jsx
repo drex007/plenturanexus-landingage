@@ -4,7 +4,7 @@ import { locationIcon, messageIcon, worldIcon } from '../assets'
 const Footer = () => {
     return (
         <div className='bg-black text-white font-sora flex flex-col justify-center items-center'>
-            <p className='text-[40px] text-primary-green'>CONTACT US</p>
+            <p className='lg:text-[40px] text-[30px] text-primary-green'>CONTACT US</p>
             <p className='text-primary-green text-[15px]'>Official Addresses :</p>
             <p className='text-[12px]'>Nigeria & Canada Office</p>
 
