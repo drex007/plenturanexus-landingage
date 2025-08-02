@@ -10,6 +10,8 @@ import CompaniesAndProjects from '../components/CompaniesAndProjects'
 import ProjectDescriptionCard from '../components/ProjectDescriptionCard'
 import WhyChooseUs from '../components/WhyChooseUs'
 import NexusImage from '../components/NexusImage'
+import StoriesAndMembers from '../components/StoriesAndMembers'
+import ContactUsCard from '../components/ContactUsCard'
 
 
 const LandingPage = () => {
@@ -57,8 +59,11 @@ const LandingPage = () => {
             <WhatWeDo />
             <CompaniesAndProjects />
             <ProjectDescriptionCard />
+            <ContactUsCard />
+            <StoriesAndMembers />
             <WhyChooseUs />
             <NexusImage />
+
             {/* <ContactForm /> */}
             <Footer />
 

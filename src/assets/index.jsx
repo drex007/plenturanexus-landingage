@@ -16,8 +16,20 @@ import messageIcon from './icons/message.svg'
 import locationIcon from './icons/location-logo.svg'
 import worldIcon from './icons/world-logo.svg'
 import nexusImage from './images/nexus-image.png'
+import phone from './images/phone.png'
+import p1 from './images/p1.png'
+import p2 from './images/p2.png'
+import p3 from './images/p3.png'
+import p4 from './images/p4.png'
+import contactUsImage from './images/contact-image.png'
+
 
 export {
+    contactUsImage,
+    p1,
+    p2,
+    p3,
+    p4,
     nexusImage,
     nexusWhatWeDo,
     img1,
@@ -35,6 +47,7 @@ export {
     messageIcon,
     locationIcon,
     worldIcon,
+    phone
 
 
 

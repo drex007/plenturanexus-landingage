@@ -1,5 +1,5 @@
 import React from 'react'
-import { nexusExport, img1, img2, img3, img4, img5 } from '../assets'
+import { nexusExport, img1, img2, img3, img4, img5, p1, p2, p3, p4 } from '../assets'
 import { motion } from 'framer-motion'
 import fadeIn from './Variant'
 
@@ -38,8 +38,8 @@ const zbounceTransition = {
 
 
 const AboutUs = () => {
+    const personsList = [p1, p2, p3, p4]
 
-   
     return (
         <div className='overflow-hidden bg-primary-sky-blue text-[12px] ' id='about'>
             <div className=' lg:h-[100vh] h-[40vh] w-[100vw]  justify-center overflow-hidden bg-no-repeat p-8 bg-cover' style={{ backgroundImage: `url(${nexusExport})` }}>
@@ -80,9 +80,15 @@ const AboutUs = () => {
 
             </div>
 
-            <div className='flex flex-1 px-16 py-8 font-sora space-x-16 text-[12px]'>
+            <div className='flex flex-1 px-16 py-8 font-sora space-x-8 text-[12px] items-center'>
                 <div className='flex-[0.5]'>
                     <div className='bg-primary-sky-blue shadow-lg border rounded-xl p-8'>
+                        <div className='flex w-full my-4 items-center'>
+                            {personsList?.map((e, i) => <img src={e} className={`z-${2* i} w-1/6 -ml-3`} key={i} />)}
+                            <div className='bg- rounded-full h-[50px] w-[50px] text-black items-center flex justify-center z-[50] -ml-3'>
+                                <p className='font-semibold text-[30px] '>+</p>
+                            </div>
+                        </div>
                         <p className='font-light'>We co-create, build, scale, and deliver high-impact ventures across agriculture, real estate, infrastructure, energy, and emerging technology engineering sustainable value chains that connect local resources to global markets</p>
 
                     </div>
@@ -92,16 +98,16 @@ const AboutUs = () => {
                         <p className='font-sora my-4 font-light text-[12px]'>Plentura Nexus sprang from a simple insight: great projects succeed when visionaries, capital partners, and operators unite. Initially focused on joint-venture cashew and cocoa farms, we’ve become full-service execution arm—structuring, mobilizing, and delivering ventures in agriculture, real estate, infrastructure, energy, technology, and exports. If you need reliable partners to buy or export Nigerian cash-crops, develop city-scale PPPs, or launch an agritech innovation hub, you’ve landed with us.</p>
                     </div>
                 </div>
-                <div className='flex-[0.5] grid grid-cols-2 items-center px-4 space-x-8'>
+                <div className='flex-[0.5] grid grid-cols-2 items-center px-4 space-x-4'>
                     <div className='space-y-8'>
-                        <img src={img1} alt="" />
-                        <img src={img2} alt="" />
+                        <img src={img3} alt="" className='w-4/5' />
+                        <img src={img5} alt="" className='w-4/5' />
 
                     </div>
                     <div className='space-y-8'>
-                        <img src={img3} alt="" />
-                        <img src={img4} alt="" />
-                        <img src={img5} alt="" />
+                        <img src={img1} alt="" className='w-4/5' />
+                        <img src={img2} alt="" className='w-4/5' />
+                        <img src={img4} alt="" className='w-4/5' />
                     </div>
 
 

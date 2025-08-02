@@ -50,8 +50,8 @@ const CarouselSlider = () => {
             </div>
             {currentIndex == 0 && <div className='flex flex-1 w-full justify-between'>
                 <div className='flex-[0.5] absolute lg:top-[70%] top-[50%] bg-transparent border px-6 py-4 ml-8 rounded-[40px] backdrop-blur-md  justify-start w-1/2'>
-                    <p className='2xl:text-[50px] lg:text-[40px] text-[14px] font-sora text-white w-full '>We Don't Just Grow Ventures,</p>
-                    <p className='2xl:text-[50px] lg:text-[40px] text-[14px] font-sora text-white w-full font-semibold'>We <span className='text-primary-green font-semibold'>Engineer The Future!</span></p>
+                    <p className='2xl:text-[45px] lg:text-[40px] text-[14px] font-sora text-white w-full '>We Don't Just Grow Ventures,</p>
+                    <p className='2xl:text-[45px] lg:text-[40px] text-[14px] font-sora text-white w-full font-semibold'>We <span className='text-primary-green font-semibold'>Engineer The Future!</span></p>
                 </div>
                 <div className=' flex-[0.5] w-1/6 ml-[60vw]  absolute lg:top-[80%] top-[50%] bg-transparent border px-4 py-4 rounded-[40px] backdrop-blur-md'>
                     <p className='flex justify-center text-white font-sora'>Partner With Us</p>
