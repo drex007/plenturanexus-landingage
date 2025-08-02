@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Irish+Grover');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "African";
+    src: url('/fonts/african/Tribeca.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Neulis";
+    src: url('/fonts/neulis-semibold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Neulis";
+    src: url('/fonts/neulis-regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Neulis";
+    src: url('/fonts/neulis-light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Fractul";
+    src: url('/fonts/fractul-bold.otf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Fractul";
+    src: url('/fonts/fractul-medium.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Fractul";
+    src: url('/fonts/fractul-light.ttf') format('truetype');
+    font-weight: 300;
+}
