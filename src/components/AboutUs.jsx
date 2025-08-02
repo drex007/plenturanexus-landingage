@@ -52,7 +52,7 @@ const AboutUs = () => {
             </div>
 
             {/* //Our Products */}
-            <div className='w-2/3 -mt-[5%] bg-white shadow-xl rounded-[40px]  my-4  mx-auto z-10 p-4'>
+            <div className='lg:w-2/3 w-full -mt-[5%] bg-white shadow-xl rounded-[40px]  my-4  mx-auto z-10 p-4'>
                 <p className='flex justify-center text-primary-text-black my-4 font-sora text-[25px]'>OUR EXPORT PRODUCTS</p>
 
                 <div className='grid grid-cols-4 gap-x-4 p-4'>

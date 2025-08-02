@@ -35,7 +35,7 @@ const CarouselSlider = () => {
             </div>
 
 
-            <div className='lg:hidden flex absolute space-x-6 lg:top-[10%] -top-[5%] h-full  justify-center items-center w-full'>
+            {/* <div className='lg:hidden flex absolute space-x-6 lg:top-[10%] -top-[5%] h-full  justify-center items-center w-full'>
                 <button className='rounded-full cursor-pointer bg-yellow-300 py-2 px-6 2xl:w-[200px] 2xl:py-6 lg:w-[140px] text-[12px] font-neulis-semibold' onClick={() => {
                     if (currentIndex !== 1) {
                         window.location.href = "/contact"
@@ -47,7 +47,7 @@ const CarouselSlider = () => {
                 }}>Send Quota</button>
                 <button className='rounded-full cursor-pointer bg-white py-2 px-6 lg:w-[140px] 2xl:w-[200px] 2xl:py-6 text-[12px] font-neulis-semibold'>Read Reviews</button>
 
-            </div>
+            </div> */}
             {currentIndex == 0 && <div className='flex flex-1 w-full justify-between'>
                 <div className='flex-[0.5] absolute lg:top-[70%] top-[50%] bg-transparent border px-6 py-4 ml-8 rounded-[40px] backdrop-blur-md  justify-start w-1/2'>
                     <p className='2xl:text-[45px] lg:text-[40px] text-[14px] font-sora text-white w-full '>We Don't Just Grow Ventures,</p>
