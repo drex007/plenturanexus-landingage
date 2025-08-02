@@ -1,5 +1,9 @@
 import React from 'react'
-import { nexusExport, img1, img2, img3, img4, img5, p1, p2, p3, p4 } from '../assets'
+import {
+    nexusExport, img1, img2, img3, img4, img5, p1, p2, p3, p4, splitGinger,
+    cashew,
+    cocoaBeans
+} from '../assets'
 import { motion } from 'framer-motion'
 import fadeIn from './Variant'
 
@@ -48,26 +52,26 @@ const AboutUs = () => {
             </div>
 
             {/* //Our Products */}
-            <div className='w-2/3 -mt-[5%] bg-white shadow-xl rounded-2xl  my-4  mx-auto z-10 p-4'>
-                <p className='flex justify-center text-primary-text-black my-4 font-sora font-semibold'>OUR EXPORT PRODUCTS</p>
+            <div className='w-2/3 -mt-[5%] bg-white shadow-xl rounded-[40px]  my-4  mx-auto z-10 p-4'>
+                <p className='flex justify-center text-primary-text-black my-4 font-sora text-[25px]'>OUR EXPORT PRODUCTS</p>
 
                 <div className='grid grid-cols-4 gap-x-4 p-4'>
                     <div className='font-sora'>
-                        <img src={img1} alt="" className='' />
+                        <img src={cashew} alt="" className='' />
                         <p className='text-primary-text-green font-semibold text-[20px] flex justify-center my-4'>Raw Cashew Nuts</p>
-                        <p className='text-center text-[12px] font-light'>High-yield, export-standard cashews
+                        <p className='text-center text-[10px] font-light'>High-yield, export-standard cashews
                             with low moisture sourced for
                             processors worldwide.</p>
                     </div>
                     <div className='font-sora'>
-                        <img src={img1} alt="" className='' />
+                        <img src={cocoaBeans} alt="" className='' />
                         <p className='text-primary-text-green font-semibold text-[20px] flex justify-center my-4'>Cocoa Beans</p>
-                        <p className='text-center text-[12px] font-light'>Fermented and sun-dried cocoa beans high butter content and deep flavor for chocolate producers.</p>
+                        <p className='text-center text-[10px] font-light'>Fermented and sun-dried cocoa beans high butter content and deep flavor for chocolate producers.</p>
                     </div>
                     <div className='font-sora'>
-                        <img src={img1} alt="" className='' />
+                        <img src={splitGinger} alt="" className='' />
                         <p className='text-primary-text-green font-semibold text-[20px] flex justify-center my-4'>Dried Split Ginger</p>
-                        <p className='text-center text-[12px] font-light'>Sun-dried ginger (Zingiber officinale), rich in aroma and oils—suitable for food and pharma.
+                        <p className='text-center text-[10px] font-light'>Sun-dried ginger (Zingiber officinale), rich in aroma and oils—suitable for food and pharma.
                         </p>
                     </div>
                     <div className='font-sora bg-primary-text-green rounded-full w-[100px] h-[100px] items-center flex flex-col justify-center text-white mt-[5vh] ml-[5vw]'>
@@ -84,8 +88,8 @@ const AboutUs = () => {
                 <div className='flex-[0.5]'>
                     <div className='bg-primary-sky-blue shadow-lg border rounded-xl p-8'>
                         <div className='flex w-full my-4 items-center'>
-                            {personsList?.map((e, i) => <img src={e} className={`z-${2* i} w-1/6 -ml-3`} key={i} />)}
-                            <div className='bg- rounded-full h-[50px] w-[50px] text-black items-center flex justify-center z-[50] -ml-3'>
+                            {personsList?.map((e, i) => <img src={e} className={`z-${2 * i} w-1/6 -ml-3`} key={i} />)}
+                            <div className='bg-gray-300 rounded-full h-[50px] w-[50px] text-black items-center flex justify-center z-[50] -ml-3'>
                                 <p className='font-semibold text-[30px] '>+</p>
                             </div>
                         </div>

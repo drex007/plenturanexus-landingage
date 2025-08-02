@@ -22,9 +22,16 @@ import p2 from './images/p2.png'
 import p3 from './images/p3.png'
 import p4 from './images/p4.png'
 import contactUsImage from './images/contact-image.png'
+import splitGinger from './images/split-ginger.png'
+import cashew from './images/cashew.png'
+import cocoaBeans from './images/cocoa-beans.png'
+
 
 
 export {
+    splitGinger,
+    cashew,
+    cocoaBeans,
     contactUsImage,
     p1,
     p2,

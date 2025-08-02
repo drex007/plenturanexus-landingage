@@ -3,17 +3,21 @@ import { phone } from '../assets'
 
 const StoriesAndMembers = () => {
     return (
-        <div className='bg-black p-16 font-sora  relative'>
-            <div className="shadow-xl pt-0 font-sora w-[90vw] mx-auto bg-gradient-to-b from-[#575757] to-black opacity-85 rounded-t-[40px] z-50  " >
-                <div className='w-full bg-black px-4 justify-items-start rounded-t-2xl'>
-                    <p className='my-4 text-primary-green capitalize text-[35px] rounded-[40px] w-full bg-black'>NEWS & STORIES</p>
+        <div className='bg-black py-16 font-sora  relative'>
+            <div className="shadow-xl pt-0 font-sora w-[90vw] mx-auto bg-gradient-to-b from-[#575757] to-black rounded-t-[40px] z-50 relative -mt-[8%]" >
+                <div className='w-full bg-black px-4 justify-items-start rounded-[30px] py-1'>
+                    <p className='my-2 text-primary-green capitalize text-[35px] rounded-[40px] w-full '>NEWS & STORIES</p>
 
                 </div>
                 <div className=' px-4 pb-8  justify-items-start rounded-b-2xl'>
                     <div className='text-white text-[12px]'>
-                        <p className='my-4'>Ogbomosho Agro-Industrial Estate</p>
-                        <p className='my-4'>Calabar Cocoa Farmstead</p>
-                        <p className=''>Cross River Strategic Farming (1k & 5k ha)</p>
+                        <p className='my-4'><span className='text-primary-green font-semibold'>Milestones:</span> land acquisitions, project launches, production kick-offs</p>
+
+                        <p className='my-4'><span className='text-primary-green font-semibold'>Blog Stories:</span> insights on agri-innovation, PPP best practices, export trends</p>
+
+                        <p className='my-4'><span className='text-primary-green font-semibold'>Press Releases:</span> media coverage, partnership announcements</p>
+
+                        <p className='my-4'><span className='text-primary-green font-semibold'>Community Impact:</span> jobs created, training programs, ESG highlights</p>
 
                     </div>
 
@@ -39,7 +43,7 @@ const StoriesAndMembers = () => {
 
             </div>
 
-                <img src={phone} alt="" className='absolute z-[9999] flex justify-items-end top-0 -mt-[30vh] w-1/2 right-0' />
+            <img src={phone} alt="" className='absolute z-[9999] flex justify-items-end top-0 -mt-[55vh] w-1/2 right-0' />
 
         </div>
     )

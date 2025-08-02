@@ -27,7 +27,7 @@ const CompaniesAndProjects = () => {
 
 
                 <div className='grid grid-cols-3'>
-                    {[1, 2, 3, 4, 5, 6].map((e, i) => <div key={i} className='lg:w-[400px] lg:h-[300px] w-[200px] h-[200px] rounded-[40px] lg:m-8 m-2 bg-white'>
+                    {[1, 2, 3, 4, 5, 6].map((e, i) => <div key={i} className='lg:w-[350px] lg:h-[300px] w-[200px] h-[200px] rounded-[40px] lg:m-8 m-2 bg-white'>
 
                     </div>)}
 
