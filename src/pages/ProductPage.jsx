@@ -9,29 +9,29 @@ const ProductPage = () => {
         {
             title: "Dried Hibiscus Flower",
             image: hisbiscus,
-            description: "Premium export-quality hibiscus, sun-dried and vibrant—ideal for teas and beverages"
+            description: "Premium export-quality hibiscus, sun-dried and vibrant ideal for teas and beverages"
         },
         {
             title: "White Sesame Seeds",
             image: sesameSeeds,
-            description: "Sortex-cleaned, high-oil sesame seeds—uniform, export-grade, and ready for global markets"
+            description: "Sortex cleaned, high oil sesame seeds,export grade, and ready for global markets"
         },
 
         {
             title: "Raw Cashew Nuts",
             image: rawCashew,
-            description: "High-yield, export-standard cashews with low moisture—sourced for processors worldwide"
+            description: "High-yield, export-standard cashews with low moisture sourced for processors worldwide"
         },
         {
             title: "Dried Split Ginger",
             image: ginger,
-            description: "Sun-dried ginger (Zingiber officinale), rich in aroma and oils—suitable for food and pharma."
+            description: "Sun-dried ginger (Zingiber officinale), rich in aroma and oils suitable for food and pharma."
         },
 
         {
             title: "Cocoa Beans",
             image: cocoa,
-            description: "Fermented and sun-dried cocoa beans—high butter content and deep flavor for chocolate producers."
+            description: "Fermented and sun-dried cocoa beans high butter content and deep flavor for chocolate producers."
         }
 
 
@@ -45,7 +45,7 @@ const ProductPage = () => {
         {
             title: "Trusted Global Partnership",
             image: w2,
-            description: "We build lasting relationships with buyers worldwide—grounded in transparency, integrity, and consistent delivery"
+            description: "We build lasting relationships with buyers worldwide grounded in transparency, integrity, and consistent delivery"
         },
 
         {
@@ -95,11 +95,11 @@ const ProductPage = () => {
             <div className=' lg:h-[100vh] h-[40vh] w-[100vw]  justify-center overflow-hidden bg-no-repeat p-8 lg:bg-cover bg-cover lg:mt-20' style={{ backgroundImage: `url(${nexusExport})`, backgroundPosition: window.innerWidth < 640 ? "-35vw center" : "-0vw center", }}>
                 <p className='hidden lg:flex  bg-gradient-radial from-primary-text-green/20 to-primary-text-green from-1% to-99%  px-10 p-4 rounded-full text-white h-[50px] text-[20px]  justify-center items-center lg:mr-[80vw]'>Products</p>
             </div>
-            <section className='grid lg:grid-cols-3 grid-cols-2 lg:gap-16 gap-2 lg:p-16 p-4'>
+            <section className='grid lg:grid-cols-3 grid-cols-2 lg:gap-16 gap-2 lg:p-16 p-2'>
                 {products?.map((e, i) => <div className={`${i === 3 ? "hidden lg:flex flex-col" : "flex flex-col"}`} key={i}>
                     <img src={e?.image} alt="" />
                     <p className='text-primary-text-green font-semibold text-center flex justify-center my-4'>{e?.title}</p>
-                    <p className='text-center my-4  lg:text-[12px] text-[10px]'>{e?.description}</p>
+                    <p className={`text-center my-2 lg:text-[12px] text-[10px]`}>{e?.description}</p>
                     <p className='px-6 py-2 bg-primary-green rounded-full text-white lg:w-2/4 w-full flex justify-center mx-auto'>See More</p>
                 </div>)}
 
