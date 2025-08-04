@@ -76,7 +76,7 @@ const AboutUs = () => {
                             <p className='text-center text-[10px] font-light'>Sun-dried ginger (Zingiber officinale), rich in aroma and oils—suitable for food and pharma.
                             </p>
                         </div>
-                        <div className='font-sora bg-primary-text-green rounded-full lg:w-[100px] w-[70px] lg:h-[100px] h-[70px]  items-center flex flex-col justify-center text-white lg:mt-[5vh] mt-4 ml-[5vw] lg:text-[10px] text-[12px]'>
+                        <div className='font-sora bg-primary-text-green rounded-full lg:w-[100px] w-[70px] lg:h-[100px] h-[70px]  items-center flex flex-col justify-center text-white lg:mt-[5vh] mt-4 ml-[5vw] lg:text-[10px] text-[12px] cursor-pointer' onClick={() => { window.location.href = "/products" }}>
                             <p>+</p>
                             <p>See</p>
                             <p>More</p>

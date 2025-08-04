@@ -22,17 +22,17 @@ function App() {
 
 
 
-        {/* <Route path='/contact' element={
+        <Route path='/contact' element={
 
           <ContactPage />
 
-        } /> */}
+        } />
         <Route path='/products' element={
 
           <ProductPage />
 
         } />
-        
+
 
       </Routes>
     </BrowserRouter>

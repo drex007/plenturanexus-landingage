@@ -100,14 +100,14 @@ const ProductPage = () => {
                     <img src={e?.image} alt="" />
                     <p className='text-primary-text-green font-semibold text-center flex justify-center my-4'>{e?.title}</p>
                     <p className='text-center my-4  lg:text-[12px] text-[10px]'>{e?.description}</p>
-                    <p className='p-4 bg-primary-green rounded-full text-white lg:w-1/3 w-full flex justify-center mx-auto'>See More</p>
+                    <p className='px-6 py-2 bg-primary-green rounded-full text-white lg:w-2/4 w-full flex justify-center mx-auto'>See More</p>
                 </div>)}
 
             </section>
 
             <section>
                 <p className='flex justify-center my-8 lg:text-[40px] text-[30px]'>Why Choose Us</p>
-                <div className='grid lg:grid-cols-2 grid-cols-2 lg:gap-16 gap-2 lg:p-16 p-4'>
+                <div className='grid lg:grid-cols-2 grid-cols-2 lg:gap-32 gap-2 lg:p-16 p-4'>
                     {whychooseus?.map((e, i) => <div key={i}>
                         <img src={e?.image} alt="" />
                         <p className='text-primary-text-green font-semibold text-center flex justify-center my-4'>{e?.title}</p>
@@ -121,7 +121,7 @@ const ProductPage = () => {
             <section>
                 <p className='flex justify-center my-4 lg:text-[40px] text-[30px]'>How We Work</p>
                 <p className='flex justify-center my-4 mx-auto text-center lg:text-[15px] text-[10px] lg:w-1/2 w-full'>At Plentura Nexus, we grow, source, and deliver premium agro commodities through a transparent and efficient system.</p>
-                <div className='grid lg:grid-cols-2 grid-cols-2 lg:gap-16 gap-2 lg:p-16 p-4'>
+                <div className='grid lg:grid-cols-2 grid-cols-2 lg:gap-32 gap-2 lg:p-16 p-4'>
                     {howwework?.map((e, i) => <div key={i}>
                         <img src={e?.image} alt="" />
                         <p className='text-primary-text-green font-semibold text-center flex justify-center my-4'>{e?.title}</p>
@@ -130,6 +130,17 @@ const ProductPage = () => {
                     </div>)}
 
                 </div>
+            </section>
+            <section className='bg-black p-2 w-full flex flex-col justify-center items-center'>
+                <p className='my-8 p-4 flex justify-center  text-primary-green text-center lg:text-[40px] text-[25px] lg:w-2/3 w-full '>We're Here to Help -Contact Us for Inquiries,Orders or Partnerships.
+
+                </p>
+                <p className='my-2 p-4 text-white text-center'>
+
+                    Reach out to us today for seamless trade solutions and expert
+                    assistance.</p>
+
+                <p className='my-8 p-4 text-white bg-primary-green rounded-2xl flex justify-center lg:w-1/4 w-1/2 mx-auto cursor-pointer ' onClick={() => { window.location.href = "/contact" }}>Request A Quote</p>
             </section>
             <Footer />
         </div>
