@@ -27,10 +27,28 @@ import cashew from './images/cashew.png'
 import cocoaBeans from './images/cocoa-beans.png'
 import phone2 from './images/phone2.png'
 import logoWhite from './icons/logo-white.png'
-
+import hisbiscus from './images/hisbiscus.png'
+import ginger from './images/ginger.png'
+import rawCashew from './images/raw-cashew.png'
+import sesameSeeds from './images/sesame-seeds.png'
+import cocoa from './images/cocoa.png'
+import w1 from './images/w1.png'
+import w2 from './images/w2.png'
+import w3 from './images/w3.png'
+import w4 from './images/w4.png'
+import h1 from './images/h1.png'
+import h2 from './images/h2.png'
+import h3 from './images/h3.png'
+import h4 from './images/h4.png'
 
 
 export {
+    w1, w2, w3, w4, h1, h2, h3, h4,
+    hisbiscus,
+    ginger,
+    rawCashew,
+    sesameSeeds,
+    cocoa,
     logoWhite,
     phone2,
     splitGinger,

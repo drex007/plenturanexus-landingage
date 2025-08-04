@@ -3,6 +3,7 @@ import { useContext, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './pages/LandingPage';
 import ContactPage from './pages/ContactPage';
+import ProductPage from './pages/ProductPage';
 function App() {
 
   return (
@@ -21,11 +22,17 @@ function App() {
 
 
 
-        <Route path='/contact' element={
+        {/* <Route path='/contact' element={
 
           <ContactPage />
 
+        } /> */}
+        <Route path='/products' element={
+
+          <ProductPage />
+
         } />
+        
 
       </Routes>
     </BrowserRouter>
