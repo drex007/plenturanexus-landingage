@@ -100,7 +100,7 @@ const ProductPage = () => {
                     <img src={e?.image} alt="" />
                     <p className='text-primary-text-green font-semibold text-center flex justify-center my-4'>{e?.title}</p>
                     <p className={`text-center my-2 lg:text-[12px] text-[10px]`}>{e?.description}</p>
-                    <p className='px-6 py-2 bg-primary-green rounded-full text-white lg:w-2/4 w-full flex justify-center mx-auto'>See More</p>
+                    {/* <p className='px-6 py-2 bg-primary-green rounded-full text-white lg:w-2/4 w-full flex justify-center mx-auto'>See More</p> */}
                 </div>)}
 
             </section>
