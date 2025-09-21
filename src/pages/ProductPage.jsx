@@ -95,11 +95,11 @@ const ProductPage = () => {
             <div className=' lg:h-[100vh] h-[40vh] w-[100vw]  justify-center overflow-hidden bg-no-repeat p-8 lg:bg-cover bg-cover lg:mt-20' style={{ backgroundImage: `url(${nexusExport})`, backgroundPosition: window.innerWidth < 640 ? "-35vw center" : "-0vw center", }}>
                 <p className='hidden lg:flex  bg-gradient-radial from-primary-text-green/20 to-primary-text-green from-1% to-99%  px-10 p-4 rounded-full text-white h-[50px] text-[20px]  justify-center items-center lg:mr-[80vw]'>Products</p>
             </div>
-            <section className='grid lg:grid-cols-3 grid-cols-2 lg:gap-16 gap-2 lg:p-16 p-2'>
+            <section className='grid lg:grid-cols-3 grid-cols-1 lg:gap-16 gap-2 lg:p-16 p-2'>
                 {products?.map((e, i) => <div className={`${i === 3 ? "hidden lg:flex flex-col" : "flex flex-col"}`} key={i}>
-                    <img src={e?.image} alt="" />
+                    <img src={e?.image} alt="" className='lg:w-[400px] w-[300px] flex mx-auto' />
                     <p className='text-primary-text-green font-semibold text-center flex justify-center my-4'>{e?.title}</p>
-                    <p className={`text-center my-2 lg:text-[12px] text-[10px]`}>{e?.description}</p>
+                    <p className={`text-center my-2 lg:text-[14px] text-[14px]`}>{e?.description}</p>
                     {/* <p className='px-6 py-2 bg-primary-green rounded-full text-white lg:w-2/4 w-full flex justify-center mx-auto'>See More</p> */}
                 </div>)}
 
@@ -107,11 +107,11 @@ const ProductPage = () => {
 
             <section>
                 <p className='flex justify-center my-8 lg:text-[40px] text-[30px]'>Why Choose Us</p>
-                <div className='grid lg:grid-cols-2 grid-cols-2 lg:gap-32 gap-2 lg:p-16 p-4'>
+                <div className='grid lg:grid-cols-2 grid-cols-2 lg:gap-96 gap-2 lg:p-16 p-4'>
                     {whychooseus?.map((e, i) => <div key={i}>
                         <img src={e?.image} alt="" />
                         <p className='text-primary-text-green font-semibold text-center flex justify-center my-4'>{e?.title}</p>
-                        <p className='text-center my-4  lg:text-[12px] text-[10px]'>{e?.description}</p>
+                        <p className='text-center my-4  lg:text-[14px] text-[10px]'>{e?.description}</p>
 
                     </div>)}
 
@@ -121,11 +121,11 @@ const ProductPage = () => {
             <section>
                 <p className='flex justify-center my-4 lg:text-[40px] text-[30px]'>How We Work</p>
                 <p className='flex justify-center my-4 mx-auto text-center lg:text-[15px] text-[10px] lg:w-1/2 w-full'>At Plentura Nexus, we grow, source, and deliver premium agro commodities through a transparent and efficient system.</p>
-                <div className='grid lg:grid-cols-2 grid-cols-2 lg:gap-32 gap-2 lg:p-16 p-4'>
+                <div className='grid lg:grid-cols-2 grid-cols-2 lg:gap-96 gap-2 lg:p-16 p-4'>
                     {howwework?.map((e, i) => <div key={i}>
                         <img src={e?.image} alt="" />
                         <p className='text-primary-text-green font-semibold text-center flex justify-center my-4'>{e?.title}</p>
-                        <p className='text-center my-4  lg:text-[12px] text-[10px]'>{e?.description}</p>
+                        <p className='text-center my-4  lg:text-[14px] text-[10px]'>{e?.description}</p>
 
                     </div>)}
 

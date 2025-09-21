@@ -16,7 +16,7 @@ import ContactUsCard from '../components/ContactUsCard'
 
 const LandingPage = () => {
     return (
-        <div className='relative 3xl:px-[20vw] '>
+        <div className=' '>
             <Helmet>
                 <title>Plentura Nexus</title>
                 <meta name='description' content='Plentura is dedicated to revolutionizing agro chain supply in Nigeria and Africa' />

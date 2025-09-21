@@ -47,9 +47,9 @@ const AboutUs = () => {
     return (
         <div className='overflow-hidden bg-primary-sky-blue text-[12px] ' id='about'>
             <div className=' lg:h-[100vh] h-[40vh] w-[100vw]  justify-center overflow-hidden bg-no-repeat p-8 lg:bg-cover bg-cover' style={{ backgroundImage: `url(${nexusExport})` }}>
-                <p className='hidden lg:flex font-sora text-primary-text-black px-10 p-4 rounded-full border h-[50px] font-semibold text-[20px]  justify-center items-center lg:ml-[80vw]'>Send Quota</p>
-                <p className='font-sora text-primary-text-black px-2 py-8 rounded-[30px] border 2xl:text-[60px] lg:text-[55px] text-[20px] bg-transparent flex justify-center text-center items-center lg:w-2/3 w-5/6 backdrop-blur-md lg:mt-[40vh]  lg:mx-0 mx-auto'>Explore With Plentura Nexus</p>
-                <p className='flex lg:hidden font-sora mt-4 text-primary-text-black px-4 p-4 rounded-full border h-[50px] font-semibold lg:text-[20px] w-1/2  justify-center items-center ml-[8vw]'>Send Quota</p>
+                <p className='hidden lg:flex font-sora text-primary-text-black px-10 p-4 rounded-full border h-[50px] font-semibold text-[20px]  justify-center items-center lg:ml-[80vw]'>Send Quote</p>
+                <p className='font-sora text-primary-text-black px-2 py-8 rounded-[30px] border 2xl:text-[60px] lg:text-[55px] text-[20px] bg-transparent flex justify-center text-center items-center lg:w-2/3 w-5/6 backdrop-blur-md lg:mt-[40vh]  lg:mx-0 mx-auto'>Export With Plentura Nexus</p>
+                <p className='flex lg:hidden font-sora mt-4 text-primary-text-black px-4 p-4 rounded-full border h-[50px] font-semibold lg:text-[20px] w-1/2  justify-center items-center ml-[8vw]'>Send Quote</p>
             </div>
 
             {/* //Our Products */}
@@ -76,7 +76,7 @@ const AboutUs = () => {
                             <p className='text-center text-[10px] font-light'>Sun-dried ginger (Zingiber officinale), rich in aroma and oils—suitable for food and pharma.
                             </p>
                         </div>
-                        <div className='font-sora bg-primary-text-green rounded-full lg:w-[100px] w-[70px] lg:h-[100px] h-[70px]  items-center flex flex-col justify-center text-white lg:mt-[5vh] mt-4 ml-[5vw] lg:text-[10px] text-[12px] cursor-pointer' onClick={() => { window.location.href = "/products" }}>
+                        <div className='font-sora bg-primary-text-green rounded-full lg:w-[100px] w-[70px] lg:h-[100px] h-[70px]  items-center flex flex-col justify-center text-white lg:mt-[5vh] mt-5 ml-[5vw] lg:text-[10px] text-[12px] cursor-pointer' onClick={() => { window.location.href = "/products" }}>
                             <p>+</p>
                             <p>See</p>
                             <p>More</p>

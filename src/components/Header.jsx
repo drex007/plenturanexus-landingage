@@ -16,7 +16,7 @@ const Header = ({ isTransparent }) => {
     }, [])
 
     return (
-        <div className='lg:px-8 px-2 py-6 h-[80px] w-full z-50 lg:flex  lg:bg-primary-green justify-between absolute top-0'>
+        <div className='lg:px-8 px-2 py-6 h-[80px] w-full z-50 lg:flex  lg:bg-primary-green justify-between absolute top-0 '>
             <div className='flex space-x-3 items-center'>
                 <img src={logo} className='h-[30px] lg:h-[40px] lg:flex hidden cursor-pointer' onClick={() => { window.location.href = "/" }} />
                 <img src={`${isTransparent ? logo : logoWhite}`} alt="" className='h-[30px] lg:h-[40px] flex lg:hidden cursor-pointer' onClick={() => { window.location.href = "/" }} />
@@ -36,6 +36,10 @@ const Header = ({ isTransparent }) => {
 
 
                 </Link>
+                <p className='text-white cursor-pointer lg:text-[12px] bg-black px-8 py-2 rounded-2xl' onClick={() => { window.location.href = "/products" }}>Products</p>
+
+
+
 
 
                 <p className='text-white cursor-pointer lg:text-[12px] bg-black px-8 py-2 rounded-2xl' onClick={() => { window.location.href = "/contact" }}>Contact Us</p>
@@ -72,6 +76,12 @@ const Header = ({ isTransparent }) => {
                             >
                                 <p className=' cursor-pointer my-4'>About Us</p>
                             </Link> */}
+
+                            <hr className='text-white'></hr>
+
+
+                            <p className=' cursor-pointer my-4' onClick={() => { window.location.href = "/" }}>Invest With Us</p>
+
 
                             <hr className='text-white'></hr>
 

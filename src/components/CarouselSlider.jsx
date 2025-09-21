@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { arrowback, arrowfront, womanExport, nexusMeeting, nexusAgro } from '../assets'
 
 
@@ -13,13 +13,22 @@ const CarouselSlider = () => {
     const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % images.length)
     const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length)
 
+
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         nextSlide();
+    //     }, 3000); // change every 3 seconds
+
+    //     return () => clearInterval(interval); // cleanup on unmount
+    // }, [images.length]);
+
     return (
         <div className='overflow-hidden md:h-[100vh] lg:h-[120vh] 2xl:h-[90vh] w-full m-auto relative '>
 
             <div className='flex transition-transform duration-500 w-full'
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                 {images?.map((e, i) => {
-                    return <img src={e} key={i} className='w-full h-[120vh] object-cover flex-shrink-0 opacity-100' loading='lazy' />
+                    return <img src={e} key={i} className='w-full lg:h-[120vh] h-[100vh] object-cover flex-shrink-0 opacity-100' loading='lazy' />
                 })}
 
             </div>
@@ -49,15 +58,15 @@ const CarouselSlider = () => {
 
             </div> */}
             {currentIndex == 0 && <div className='flex flex-1 lg:flex-row flex-col w-full justify-between'>
-                <div className='absolute z-2 flex lg:hidden justify-center  right-0 mr-5 bg-red-600 w-3/6 -mt-[90vh] bg-transparent border px-4 py-4 rounded-[40px] backdrop-blur-md'>
-                    <p className='flex justify-center text-white font-sora'>Partner With Us</p>
+                <div className='absolute z-2 flex lg:hidden justify-center  right-0 mr-5 bg-red-600 w-2/6 -mt-[80vh] bg-transparent border px-2 py-3 rounded-[40px] backdrop-blur-md'>
+                    <p className='flex justify-center text-white font-sora text-[10px]' >Partner With Us</p>
 
                 </div>
-                <div className='lg:flex-[0.5] absolute lg:top-[70%] top-[70%] bg-transparent border px-6 lg:py-4 py-8 ml-8 rounded-[30px] backdrop-blur-md  justify-start lg:w-1/2 '>
+                <div className='lg:flex-[0.5] absolute lg:top-[70%] top-[70%] bg-transparent border px-6 lg:py-4 py-8 ml-8 rounded-[30px] backdrop-blur-[2px]  justify-start lg:w-1/2 '>
                     <p className='2xl:text-[45px] lg:text-[40px] text-[14px] font-sora text-white w-full '>We Don't Just Grow Ventures,</p>
                     <p className='2xl:text-[45px] lg:text-[40px] text-[14px] font-sora text-white w-full font-semibold'>We <span className='text-primary-green font-semibold'>Engineer The Future!</span></p>
                 </div>
-                <div className='hidden lg:flex justify-center flex-[0.5] w-1/6 ml-[60vw]  absolute lg:top-[80%] top-[50%] bg-transparent border px-4 py-4 rounded-[40px] backdrop-blur-md'>
+                <div className='hidden lg:flex justify-center flex-[0.5] w-1/6 ml-[60vw]  absolute lg:top-[80%] top-[50%] bg-transparent border px-4 py-4 rounded-[40px] backdrop-blur-[4px]'>
                     <p className='flex justify-center text-white font-sora'>Partner With Us</p>
 
                 </div>
