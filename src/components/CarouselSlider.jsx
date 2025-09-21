@@ -14,13 +14,13 @@ const CarouselSlider = () => {
     const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length)
 
 
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         nextSlide();
-    //     }, 3000); // change every 3 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextSlide();
+        }, 3000); // change every 3 seconds
 
-    //     return () => clearInterval(interval); // cleanup on unmount
-    // }, [images.length]);
+        return () => clearInterval(interval); // cleanup on unmount
+    }, [images.length]);
 
     return (
         <div className='overflow-hidden md:h-[100vh] lg:h-[120vh] 2xl:h-[90vh] w-full m-auto relative '>
