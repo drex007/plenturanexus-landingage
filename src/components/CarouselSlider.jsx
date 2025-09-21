@@ -28,7 +28,14 @@ const CarouselSlider = () => {
             <div className='flex transition-transform duration-500 w-full'
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                 {images?.map((e, i) => {
-                    return <img src={e} key={i} className='w-full lg:h-[120vh] h-[95vh] object-cover flex-shrink-0 opacity-100' loading='lazy' />
+                    return <img src={e} key={i} className='w-full lg:h-[120vh] h-[95vh] right-1/3 object-cover flex-shrink-0 opacity-100' loading='lazy' 
+                    style={{
+                        
+                        transformOrigin: "center",
+                        objectPosition: "50% 70%", // 👈 X% Y%  → push focus to the right
+                    }} 
+                    
+                    />
                 })}
 
             </div>
@@ -58,7 +65,7 @@ const CarouselSlider = () => {
 
             </div> */}
             {currentIndex == 0 && <div className='flex flex-1 lg:flex-row flex-col w-full justify-between'>
-                <div className='absolute z-2 flex lg:hidden justify-center  right-0 mr-5 bg-red-600 w-2/6 -mt-[80vh] bg-transparent border px-2 py-3 rounded-[40px] backdrop-blur-md'>
+                <div className='absolute z-2 flex lg:hidden justify-center  right-0 mr-5 bg-red-600 w-2/6 -mt-[75vh] bg-transparent border px-2 py-3 rounded-[40px] backdrop-blur-md'>
                     <p className='flex justify-center text-white font-sora text-[10px]' >Partner With Us</p>
 
                 </div>
