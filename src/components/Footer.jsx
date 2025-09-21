@@ -30,16 +30,16 @@ const Footer = () => {
             <p className='flex justify-center lg:text-[20px] text-[15px]  pt-4 font-semibold'></p>
             <div className='flex justify-start  space-x-2 w-full px-4 my-2 items-center '>
                 <img src={messageIcon} className='w-[20px]' />
-                <p className='flex justify-center lg:text-[12px] text-[12px]'>info@plenturanexus.com | plenturanexus@gmail.com </p>
+                <p className='flex justify-center lg:text-[12px] text-[10px]'>info@plenturanexus.com | plenturanexus@gmail.com </p>
             </div>
 
             <div className='flex justify-start  space-x-2 w-full px-4 '>
                 <img src={worldIcon} className='w-[20px]' />
-                <p className='flex justify-center lg:text-[12px] text-[12px] items-center'>www.plenturanexus.com</p>
+                <p className='flex justify-center lg:text-[12px] text-[10px] items-center'>www.plenturanexus.com</p>
             </div>
             <div className='flex justify-start  space-x-2 w-full px-4 my-2 items-center  '>
                 <img src={locationIcon} className='w-[20px]' />
-                <p className='flex justify-center lg:text-[12px] text-[12px]'>Nigeria & Canada Office</p>
+                <p className='flex justify-center lg:text-[12px] text-[10px]'>Nigeria & Canada Office</p>
             </div>
 
             <p className='flex justify-center lg:text-[15px] text-[12px] lg:px-0 px-4 py-4 text-center'>At plenturanexus,  we are boosting production,distribution and export of agricultural products</p>
