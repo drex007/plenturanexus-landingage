@@ -89,14 +89,37 @@ const Header = ({ isTransparent }) => {
 
                             <hr className='text-white'></hr>
 
+                            <Link
+                                to="company-projects"
+                                spy={true}
+                                smooth={true}
+                                offset={10}
+                                duration={1000}
+                            >
 
-                            <p className=' cursor-pointer my-4' onClick={() => { window.location.href = "/" }}>Invest With Us</p>
+                                <p className=' cursor-pointer my-4'>Explore Projects</p>
+                            </Link>
+
+
+                            <hr className='text-white'></hr>
+
+                            <Link
+                                to="invest"
+                                spy={true}
+                                smooth={true}
+                                offset={10}
+                                duration={1000}
+                            >
+
+                                <p className=' cursor-pointer my-4'>Invest With Us</p>
+                            </Link>
+
 
 
                             <hr className='text-white'></hr>
 
 
-                            <p className=' cursor-pointer my-4' onClick={() => { window.location.href = "/products" }}>Our Products</p>
+                            <p className=' cursor-pointer my-4' onClick={() => { window.location.href = "/products" }}>Products</p>
 
 
                             <hr className='text-white'></hr>
