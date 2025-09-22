@@ -16,20 +16,30 @@ const Header = ({ isTransparent }) => {
     }, [])
 
     return (
-        <div className='lg:px-8 px-2 py-6 h-[80px] w-full z-50 lg:flex  lg:bg-primary-green justify-between absolute top-0 '>
+        <div className='lg:px-8 px-2 py-6 h-[80px] w-full z-50 lg:flex  lg:bg-primary-green justify-between absolute top-0' id='header'>
             <div className='flex space-x-3 items-center'>
                 <img src={logo} className='h-[30px] lg:h-[40px] lg:flex hidden cursor-pointer' onClick={() => { window.location.href = "/" }} />
                 <img src={`${isTransparent ? logo : logoWhite}`} alt="" className='h-[30px] lg:h-[40px] flex lg:hidden cursor-pointer' onClick={() => { window.location.href = "/" }} />
 
             </div>
             <div className='hidden lg:flex space-x-8 items-center '>
-                <p className='text-white cursor-pointer bg-black px-8 rounded-2xl py-2 lg:text-[12px]' onClick={() => { window.location.href = "/" }}>Explore Projects</p>
+                <Link
+                    to="company-projects"
+                    spy={true}
+                    smooth={true}
+                    offset={10}
+                    duration={1000}
+                >
+
+                    <p className='text-white cursor-pointer bg-black px-8 rounded-2xl py-2 lg:text-[12px]'>Explore Projects</p>
+
+                </Link>
                 <Link
                     to="invest"
                     spy={true}
                     smooth={true}
                     offset={20}
-                    duration={300}
+                    duration={1000}
 
                 >
                     <p className='text-white cursor-pointer lg:text-[12px] bg-black px-8 py-2 rounded-2xl'>Invest With Us</p>

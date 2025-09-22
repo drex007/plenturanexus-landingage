@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { locationIcon, messageIcon, worldIcon } from '../assets'
+import { FaArrowUp } from "react-icons/fa6";
+import { Link } from 'react-scroll'
 
 // const Footer = () => {
 //     return (
@@ -25,8 +27,28 @@ import { locationIcon, messageIcon, worldIcon } from '../assets'
 
 // export default Footer
 const Footer = () => {
+    const [currentWidth, setCurrentWidth] = useState(null)
+    useEffect(() => {
+
+        setCurrentWidth(window.innerWidth)
+
+    }, [])
+
     return (
         <div className='bg-black text-white font-sora'>
+            <div className='flex justify-end mx-4 pt-4'>
+                <Link
+                    to="header"
+                    spy={true}
+                    smooth={true}
+                    offset={10}
+                    duration={1000}
+                >
+
+                    <FaArrowUp className='bg-white rounded-full lg:py-4 py-2 cursor-pointer' color='green' size={currentWidth < 1200 ? 40 : 60} />
+                </Link>
+            </div>
+
             <p className='flex justify-center lg:text-[20px] text-[15px]  pt-4 font-semibold'></p>
             <div className='flex justify-start  space-x-2 w-full px-4 my-2 items-center '>
                 <img src={messageIcon} className='w-[20px]' />
@@ -53,13 +75,13 @@ const Footer = () => {
                     <p className='font-semibold lg:text-[16px] text-[14px] text-primary-light-green'>Products</p>
 
                     <p className='my-2 cursor-pointer'>Product page</p>
-                
+
                 </div>
                 <div>
                     <p className='font-semibold lg:text-[16px] text-[14px] text-primary-light-green'>Explore</p>
 
                     <p className='my-2 cursor-pointer'>Our Team</p>
-        
+
                 </div>
                 <div>
                     <p className='font-semibold lg:text-[16px] text-[14px] text-primary-light-green'>Company</p>

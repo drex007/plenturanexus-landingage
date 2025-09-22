@@ -6,7 +6,7 @@ import fadeIn from './Variant'
 const CompaniesAndProjects = () => {
 
     return (
-        <div className='bg-primary-green-black overflow-hidden lg:pt-0 lg:py-32  pb-32 font-sora bg-primary-sky-blue lg:px-16 px-4 text-[12px] -z-50'>
+        <div className='bg-primary-green-black overflow-hidden lg:pt-0 lg:py-32  pb-32 font-sora bg-primary-sky-blue lg:px-16 px-4 text-[12px] -z-50' id='company-projects'>
             <p className='lg:text-[50px]  text-[35px] flex justify-center text-center'>COMPANIES & POJECTS</p>
 
 
