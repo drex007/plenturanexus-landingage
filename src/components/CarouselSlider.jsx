@@ -84,8 +84,8 @@ const CarouselSlider = () => {
 
             }
             {currentIndex == 1 && <div className='absolute lg:top-[70%] top-[50%] h-full  justify-start  px-8 lg:w-1/2 w-full'>
-                <p className='2xl:text-[35px] lg:text-[35px] text-[15px] font-sora text-white w-full '>We advocate for best practices and traceable results. We do this by our specialized and thorough procedures </p>
-                <p className='2xl:text-[35px] lg:text-[35px] text-[15px] font-sora text-white w-full font-semibold'> <span className='text-primary-green font-semibold'>As builders, we transform business ideas into Establishments by means of trusted models and by providing hands-on technical skills.</span></p>
+                <p className='2xl:text-[35px] lg:text-[35px] text-[18px] font-sora text-white w-full '>We advocate for best practices and traceable results. We do this by our specialized and thorough procedures </p>
+                <p className='2xl:text-[35px] lg:text-[35px] text-[18px] font-sora text-white w-full font-semibold'> <span className='text-primary-green font-semibold'>As builders, we transform business ideas into Establishments by means of trusted models and by providing hands-on technical skills.</span></p>
             </div>}
             {currentIndex == 2 && <div className='absolute lg:top-[70%] top-[50%] h-full  justify-start  px-8 w-full'>
                 <p className='2xl:text-[50px] lg:text-[50px] text-[30px] font-sora text-white w-full '>We Don't Just Grow Ventures,</p>
